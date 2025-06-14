@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeu Vidéo en Python - MorpAttack | Yassir El Hajouti</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="projet-detail.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <h2>Yassir El Hajouti</h2>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="index.html#accueil" class="nav-link">Accueil</a></li>
+                <li><a href="index.html#about" class="nav-link">À propos</a></li>
+                <li><a href="index.html#formation" class="nav-link">Formation</a></li>
+                <li><a href="index.html#competences" class="nav-link">Compétences</a></li>
+                <li><a href="index.html#projets" class="nav-link active">Projets</a></li>
+                <li><a href="index.html#activites" class="nav-link">Activités</a></li>
+                <li><a href="index.html#swot" class="nav-link">Analyse SWOT</a></li>
+                <li><a href="index.html#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Détail Projet Jeu Vidéo -->
+    <section class="projet-detail">
+        <div class="container">
+            <div class="section-header">
+                <a href="index.html#projets" class="btn-retour">
+                    <i class="fas fa-arrow-left"></i> Retour aux projets
+                </a>
+                <h1 class="section-title">Jeu Vidéo en Python - MorpAttack</h1>
+                <p class="section-subtitle">Réinvention du morpion classique avec mécaniques RPG et quiz culturel</p>
+                <div class="projet-status-badge">
+                    <span class="status-badge termine">Terminé - 1ère année (2023)</span>
+                </div>
+            </div>
+
+            <div class="projet-detail-content">
+                <!-- Introduction du projet -->
+                <div class="projet-intro">
+                    <div class="intro-text">
+                        <h3>Contexte du projet</h3>
+                        <p>Dans le cadre du cours de Projet Informatique Appliquée, nous devions créer une application
+                            répondant à des critères bien précis. Notre équipe s'est inspirée du célèbre jeu du morpion
+                            pour créer "MorpAttack", une version révolutionnaire qui élimine les matches nuls et ajoute
+                            une dimension stratégique passionnante.</p>
+                        <p>Le principe est simple mais innovant : chaque joueur incarne un personnage unique (Viking,
+                            Chevalier ou Samouraï) avec des caractéristiques spéciales. Pour gagner, il faut réduire les
+                            points de vie de l'adversaire à zéro en répondant correctement à des quiz de culture
+                            générale et en alignant stratégiquement ses symboles.</p>
+                    </div>
+                </div>
+
+                <!-- Menu principal du jeu -->
+                <div class="intro-image" style="margin-top: 2rem;">
+                    <div style="text-align: center;">
+                        <h4>Interface du menu principal</h4>
+                        <img src="menu_principal.jpg" alt="Menu principal de MorpAttack" class="projet-img"
+                            style="max-width: 400px; width: 100%; border: 2px solid #ddd;">
+                    </div>
+                </div>
+
+                <!-- Objectifs du projet -->
+                <div class="objectifs-section">
+                    <h3><i class="fas fa-bullseye"></i> Objectifs du projet</h3>
+                    <div class="objectifs-grid">
+                        <div class="objectif-item">
+                            <div class="objectif-icon">
+                                <i class="fas fa-gamepad"></i>
+                            </div>
+                            <h4>Innovation ludique</h4>
+                            <p>Transformer le morpion traditionnel en jeu de stratégie dynamique avec des personnages
+                                RPG et éliminer définitivement les matches nuls.</p>
+                        </div>
+                        <div class="objectif-item">
+                            <div class="objectif-icon">
+                                <i class="fas fa-brain"></i>
+                            </div>
+                            <h4>Éducation par le jeu</h4>
+                            <p>Intégrer un système de quiz culturel pour allier divertissement et apprentissage à
+                                travers des questions de géographie européenne.</p>
+                        </div>
+                        <div class="objectif-item">
+                            <div class="objectif-icon">
+                                <i class="fas fa-code"></i>
+                            </div>
+                            <h4>Maîtrise technique</h4>
+                            <p>Développer nos compétences en programmation orientée objet, interface graphique et
+                                gestion d'événements avec Python et Tkinter.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Principe du jeu -->
+                <div class="defis-section">
+                    <h3><i class="fas fa-chess"></i> Mécaniques de jeu</h3>
+                    <div class="defis-container">
+                        <div class="defi-hardware">
+                            <h4><i class="fas fa-sword"></i> Système de combat</h4>
+                            <ul>
+                                <li><strong>Sélection de personnage :</strong> Choix parmi 3 classes aux statistiques
+                                    uniques</li>
+                                <li><strong>Points de vie :</strong> Chaque personnage débute avec 100 PV</li>
+                                <li><strong>Mécaniques spéciales :</strong> Capacités uniques par classe (Fureur,
+                                    Bouclier, Précision)</li>
+                                <li><strong>Condition de victoire :</strong> Réduire les PV adverses à zéro</li>
+                            </ul>
+                        </div>
+                        <div class="defi-software">
+                            <h4><i class="fas fa-map"></i> Quiz géographique</h4>
+                            <ul>
+                                <li><strong>Questions européennes :</strong> Capitales des pays européens (Belgique,
+                                    France, Espagne, Danemark, Italie)</li>
+                                <li><strong>Système de bonus :</strong> 3 bonnes réponses consécutives = attaque
+                                    spéciale</li>
+                                <li><strong>Pénalité :</strong> Mauvaise réponse remet le compteur à zéro</li>
+                                <li><strong>Alignement bonus :</strong> 3 symboles alignés = attaque gratuite immédiate
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sélection de personnages -->
+                <div class="intro-image" style="margin-top: 2rem;">
+                    <div style="text-align: center;">
+                        <h4>Interface de sélection des personnages</h4>
+                        <img src="selection_personnages.jpg" alt="Sélection des personnages" class="projet-img"
+                            style="max-width: 600px; width: 100%;">
+                    </div>
+                </div>
+
+                <!-- Personnages et mécaniques -->
+                <div class="technologies-section">
+                    <h3><i class="fas fa-users-cog"></i> Personnages et capacités spéciales</h3>
+                    <div class="tech-grid">
+                        <div class="tech-category">
+                            <h4><i class="fas fa-hammer"></i> Viking - Fureur</h4>
+                            <div class="tech-tags">
+                                <span class="tech-tag">100 PV</span>
+                                <span class="tech-tag">20 Attaque</span>
+                                <span class="tech-tag">10 Défense</span>
+                                <span class="tech-tag">Rage destructrice</span>
+                            </div>
+                            <p>Jauge de fureur qui se remplit à chaque attaque (+1). Au 3ème coup, dégâts doublés
+                                automatiquement et jauge remise à zéro. Statistiques d'attaque élevées pour maximiser
+                                les dégâts en rage.</p>
+                        </div>
+                        <div class="tech-category">
+                            <h4><i class="fas fa-shield-alt"></i> Chevalier - Bouclier</h4>
+                            <div class="tech-tags">
+                                <span class="tech-tag">100 PV</span>
+                                <span class="tech-tag">15 Attaque</span>
+                                <span class="tech-tag">15 Défense</span>
+                                <span class="tech-tag">Protection initiale</span>
+                            </div>
+                            <p>Possède un bouclier magique au début de la partie. La première attaque reçue a ses dégâts
+                                divisés par deux, puis le bouclier disparaît définitivement. Statistiques équilibrées.
+                            </p>
+                        </div>
+                        <div class="tech-category">
+                            <h4><i class="fas fa-eye"></i> Samouraï - Précision</h4>
+                            <div class="tech-tags">
+                                <span class="tech-tag">100 PV</span>
+                                <span class="tech-tag">18 Attaque</span>
+                                <span class="tech-tag">8 Défense</span>
+                                <span class="tech-tag">Frappe critique</span>
+                            </div>
+                            <p>Débute avec 10% de chance de doubler les dégâts. Chaque utilisation de la précision
+                                réduit la probabilité de 10%. Facteur chance qui peut changer le cours d'une bataille.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Quiz en action -->
+                <div class="intro-image" style="margin-top: 2rem;">
+                    <div style="text-align: center;">
+                        <h4>Système de quiz en cours de partie</h4>
+                        <img src="quiz_exemple.jpg" alt="Exemple de quiz géographique" class="projet-img"
+                            style="max-width: 500px; width: 100%;">
+                    </div>
+                </div>
+
+                <!-- Architecture technique -->
+                <div class="analyse-section">
+                    <h3><i class="fas fa-code-branch"></i> Architecture logicielle</h3>
+                    <div class="analyse-content">
+                        <div class="analyse-text">
+                            <h4>Structure orientée objet</h4>
+                            <p>Le projet adopte une architecture modulaire rigoureuse, développée de manière
+                                incrémentale :</p>
+                            <ul>
+                                <li><strong>Classe Personnage :</strong> Classe mère définissant vie, attaque, défense
+                                    et méthode d'attaque de base</li>
+                                <li><strong>Héritage spécialisé :</strong> Classes Viking, Chevalier et Samouraï
+                                    héritant avec leurs capacités uniques</li>
+                                <li><strong>Modules indépendants :</strong> Développement séparé puis intégration
+                                    (sélection, quiz, animations GIF)</li>
+                                <li><strong>Interface Tkinter :</strong> Gestion d'événements, fenêtres multiples et
+                                    navigation intuitive</li>
+                                <li><strong>Gestion d'images :</strong> Classe ImageDisplay pour animations fluides des
+                                    personnages</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Technologies utilisées -->
+                <div class="competences-developpees">
+                    <h3><i class="fas fa-tools"></i> Technologies et librairies</h3>
+                    <div class="competences-grid">
+                        <div class="competence-category">
+                            <h4>Stack technique</h4>
+                            <ul>
+                                <li>Python 3.x avec programmation orientée objet avancée</li>
+                                <li>Tkinter pour l'interface graphique complète</li>
+                                <li>PIL (Image, ImageTk) pour gestion des GIF animés</li>
+                                <li>Random pour sélection aléatoire des questions</li>
+                                <li>Functools.partial pour gestion des callbacks complexes</li>
+                            </ul>
+                        </div>
+                        <div class="competence-category">
+                            <h4>Fonctionnalités développées</h4>
+                            <ul>
+                                <li>Système de fenêtres multiples avec navigation</li>
+                                <li>Animations GIF personnalisées par personnage</li>
+                                <li>Gestion d'états complexes (bonus, capacités spéciales)</li>
+                                <li>Interface de quiz avec validation en temps réel</li>
+                                <li>Affichage dynamique des statistiques de combat</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Interface de jeu -->
+                <div class="intro-image" style="margin-top: 2rem;">
+                    <div style="text-align: center;">
+                        <h4>Interface de jeu avec statistiques des joueurs</h4>
+                        <img src="interface_jeu.jpg" alt="Interface de jeu complète" class="projet-img"
+                            style="max-width: 300px; width: 100%; border: 2px solid #ddd;">
+                    </div>
+                </div>
+
+                <!-- Résultats -->
+                <div class="resultats-section">
+                    <h3><i class="fas fa-trophy"></i> Résultats techniques</h3>
+                    <div class="resultats-grid">
+                        <div class="resultat-item">
+                            <div class="resultat-metric">
+                                <span class="metric-value">800+</span>
+                                <span class="metric-label">Lignes de code</span>
+                            </div>
+                            <p>Code Python structuré avec documentation complète et commentaires détaillés</p>
+                        </div>
+                        <div class="resultat-item">
+                            <div class="resultat-metric">
+                                <span class="metric-value">10</span>
+                                <span class="metric-label">Classes développées</span>
+                            </div>
+                            <p>Architecture modulaire avec héritage et encapsulation respectés</p>
+                        </div>
+                        <div class="resultat-item">
+                            <div class="resultat-metric">
+                                <span class="metric-value">5</span>
+                                <span class="metric-label">Interfaces graphiques</span>
+                            </div>
+                            <p>Menu, sélection, quiz, jeu et aide avec navigation fluide</p>
+                        </div>
+                        <div class="resultat-item">
+                            <div class="resultat-metric">
+                                <span class="metric-value">3</span>
+                                <span class="metric-label">Modes de jeu</span>
+                            </div>
+                            <p>Multijoueur, aide détaillée et fonction de test intégrée</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Défis techniques -->
+                <div class="perspectives-section">
+                    <h3><i class="fas fa-exclamation-triangle"></i> Défis techniques rencontrés</h3>
+                    <div class="perspectives-content">
+                        <div class="perspective-item">
+                            <h4><i class="fas fa-puzzle-piece"></i> Problèmes majeurs</h4>
+                            <ul>
+                                <li>Abandon du système de cartes initial trop complexe avec Canvas</li>
+                                <li>Synchronisation entre quiz et placement des symboles impossible</li>
+                                <li>Assemblage difficile des modules développés séparément</li>
+                                <li>Réinitialisation du plateau non fonctionnelle (problème non résolu)</li>
+                                <li>Gestion des animations GIF avec PIL plus complexe que prévu</li>
+                            </ul>
+                        </div>
+                        <div class="perspective-item">
+                            <h4><i class="fas fa-lightbulb"></i> Solutions créatives</h4>
+                            <ul>
+                                <li>Remplacement du système de cartes par quiz + mécaniques de classe</li>
+                                <li>Création d'un système de jauge bonus pour contourner la synchronisation</li>
+                                <li>Aide de l'enseignant pour l'intégration des modules</li>
+                                <li>Adaptation des règles : fin de partie accélérée quand plateau plein</li>
+                                <li>Classe ImageDisplay dédiée pour gérer les animations</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Impact pédagogique -->
+                <div class="impact-section">
+                    <h3><i class="fas fa-graduation-cap"></i> Apprentissages et compétences acquises</h3>
+                    <div class="impact-content">
+                        <div class="impact-text">
+                            <p>Ce premier projet en équipe a été une expérience formatrice exceptionnelle, marquant
+                                notre introduction à la programmation orientée objet et au développement d'applications
+                                interactives :</p>
+                            <ul>
+                                <li><strong>Travail d'équipe :</strong> Première expérience de coordination, répartition
+                                    des tâches et intégration de modules</li>
+                                <li><strong>Programmation orientée objet :</strong> Maîtrise des concepts d'héritage,
+                                    encapsulation et polymorphisme</li>
+                                <li><strong>Résolution de problèmes :</strong> Adaptation créative face aux obstacles
+                                    techniques majeurs</li>
+                                <li><strong>Interface utilisateur :</strong> Création d'expériences interactives avec
+                                    Tkinter</li>
+                                <li><strong>Gestion de projet :</strong> Planification, deadlines et livraison d'un
+                                    produit fonctionnel</li>
+                            </ul>
+                        </div>
+                        <div class="impact-quote">
+                            <blockquote>
+                                "Ce cours nous a permis d'apprendre énormément de chose. Le fait que nous sommes une
+                                équipe par exemple. Dès le début de ce projet, nous nous sommes attribué des rôles que
+                                je pense avoir accompli. Nous avons encore la tête pleine d'idées originales."
+                                <cite>— Extrait du rapport de projet</cite>
+                            </blockquote>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Fonctionnalités du jeu -->
+                <div class="analyse-section" style="margin-top: 3rem;">
+                    <h3><i class="fas fa-list-check"></i> Fonctionnalités implémentées</h3>
+                    <div class="analyse-content">
+                        <div class="analyse-text">
+                            <h4>Système complet de jeu</h4>
+                            <p>MorpAttack propose une expérience de jeu riche et variée :</p>
+                            <ul>
+                                <li><strong>Menu principal intuitif :</strong> Navigation claire entre les modes de jeu
+                                    et options</li>
+                                <li><strong>Système d'aide intégré :</strong> Explication complète des règles et
+                                    mécaniques</li>
+                                <li><strong>Mode test :</strong> Fonction de validation pour assurer la stabilité du jeu
+                                </li>
+                                <li><strong>Animations personnalisées :</strong> GIF uniques pour chaque personnage lors
+                                    de la sélection</li>
+                                <li><strong>Gestion des scores :</strong> Suivi en temps réel des points de vie et
+                                    statistiques</li>
+                                <li><strong>Interface multifenêtre :</strong> Expérience utilisateur fluide et
+                                    professionnelle</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2025 Yassir El Hajouti - ePortfolio EPHEC. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to top button -->
+    <button class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

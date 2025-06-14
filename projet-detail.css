@@ -1,0 +1,551 @@
+/* Styles pour la page de détail des projets */
+.projet-detail {
+    background: var(--white);
+    min-height: 100vh;
+    padding: 6rem 0 2rem 0;
+}
+
+.projet-detail .section-header {
+    text-align: left;
+    margin-bottom: 3rem;
+}
+
+.btn-retour {
+    background: transparent;
+    border: 2px solid var(--primary-color);
+    color: var(--primary-color);
+    padding: 0.8rem 1.5rem;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    margin-bottom: 2rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.btn-retour:hover {
+    background: var(--primary-color);
+    color: var(--white);
+    transform: translateY(-2px);
+}
+
+.projet-status-badge {
+    margin-top: 1rem;
+}
+
+.status-badge {
+    padding: 0.5rem 1.5rem;
+    border-radius: 25px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    display: inline-block;
+}
+
+.status-badge.en-cours {
+    background: #28a745;
+    color: white;
+}
+
+.projet-detail-content {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.projet-intro {
+    margin-bottom: 2rem;
+}
+
+.intro-text h3 {
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+}
+
+.intro-text p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: var(--text-light);
+    margin-bottom: 1.5rem;
+}
+
+.intro-image {
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+}
+
+.image-comparison {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+}
+
+.comparison-item {
+    text-align: center;
+}
+
+.comparison-item h4 {
+    margin-bottom: 0.8rem;
+    color: var(--text-dark);
+    font-size: 1rem;
+}
+
+.comparison-img-ancien,
+.comparison-img-nouveau {
+    width: 100%;
+    height: 400px;
+    object-fit: contain;
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+    background: #f8f9fa;
+}
+
+.objectifs-section,
+.defis-section,
+.technologies-section,
+.resultats-section,
+.impact-section,
+.analyse-section,
+.competences-developpees,
+.perspectives-section {
+    margin-bottom: 4rem;
+}
+
+.objectifs-section h3,
+.defis-section h3,
+.technologies-section h3,
+.resultats-section h3,
+.impact-section h3,
+.analyse-section h3,
+.competences-developpees h3,
+.perspectives-section h3 {
+    color: var(--text-dark);
+    margin-bottom: 2rem;
+    font-size: 1.8rem;
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.objectifs-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.objectif-item {
+    background: rgba(248, 249, 250, 0.8);
+    padding: 2rem;
+    border-radius: 15px;
+    text-align: center;
+    transition: transform 0.3s ease;
+    border-left: 4px solid var(--primary-color);
+}
+
+.objectif-item:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-hover);
+}
+
+.objectif-icon {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.objectif-item h4 {
+    color: var(--text-dark);
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+
+.defis-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+}
+
+.defi-hardware,
+.defi-software {
+    background: rgba(248, 249, 250, 0.8);
+    padding: 2rem;
+    border-radius: 15px;
+    transition: transform 0.3s ease;
+}
+
+.defi-hardware:hover,
+.defi-software:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-hover);
+}
+
+.defi-hardware h4,
+.defi-software h4 {
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+    font-size: 1.3rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.defi-hardware ul,
+.defi-software ul {
+    list-style: none;
+}
+
+.defi-hardware li,
+.defi-software li {
+    padding: 0.8rem 0;
+    border-bottom: 1px solid rgba(255, 107, 53, 0.1);
+    position: relative;
+    padding-left: 1.5rem;
+    line-height: 1.6;
+}
+
+.defi-hardware li:last-child,
+.defi-software li:last-child {
+    border-bottom: none;
+}
+
+.defi-hardware li::before,
+.defi-software li::before {
+    content: '▶';
+    position: absolute;
+    left: 0;
+    color: var(--primary-color);
+    font-size: 0.8rem;
+}
+
+.analyse-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    align-items: flex-start;
+}
+
+.analyse-text h4 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+
+.analyse-text ul {
+    list-style: none;
+    margin-top: 1.5rem;
+}
+
+.analyse-text li {
+    padding: 0.8rem 0;
+    position: relative;
+    padding-left: 1.5rem;
+    color: var(--text-light);
+    line-height: 1.6;
+}
+
+.analyse-text li::before {
+    content: '•';
+    position: absolute;
+    left: 0;
+    color: var(--primary-color);
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.analyse-schema {
+    background: rgba(248, 249, 250, 0.8);
+    padding: 2rem;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.analyse-schema h4 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.schema-placeholder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.projet-img {
+    width: 100%;
+    max-width: 900px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+    object-fit: contain;
+}
+
+.tech-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.tech-category {
+    background: rgba(248, 249, 250, 0.8);
+    padding: 2rem;
+    border-radius: 15px;
+    transition: transform 0.3s ease;
+}
+
+.tech-category:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-hover);
+}
+
+.tech-category h4 {
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.tech-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+}
+
+.tech-tag {
+    background: var(--primary-color);
+    color: var(--white);
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: transform 0.3s ease;
+}
+
+.tech-tag:hover {
+    transform: scale(1.05);
+}
+
+.competences-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+}
+
+.competence-category {
+    background: rgba(248, 249, 250, 0.8);
+    padding: 2rem;
+    border-radius: 15px;
+}
+
+.competence-category h4 {
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+    font-size: 1.2rem;
+}
+
+.competence-category ul {
+    list-style: none;
+}
+
+.competence-category li {
+    padding: 0.6rem 0;
+    position: relative;
+    padding-left: 1.5rem;
+    color: var(--text-light);
+    line-height: 1.6;
+}
+
+.competence-category li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+.resultats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+}
+
+.resultat-item {
+    text-align: center;
+    padding: 2rem;
+    background: rgba(248, 249, 250, 0.8);
+    border-radius: 15px;
+    transition: transform 0.3s ease;
+}
+
+.resultat-item:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-hover);
+}
+
+.resultat-metric {
+    margin-bottom: 1rem;
+}
+
+.metric-value {
+    display: block;
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+.metric-label {
+    display: block;
+    font-size: 1.1rem;
+    color: var(--text-dark);
+    font-weight: 600;
+}
+
+.resultat-item p {
+    color: var(--text-light);
+    line-height: 1.5;
+    margin: 0;
+}
+
+.impact-content {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 3rem;
+    align-items: start;
+}
+
+.impact-text p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: var(--text-light);
+}
+
+.impact-text ul {
+    list-style: none;
+    margin-top: 1.5rem;
+}
+
+.impact-text li {
+    padding: 0.8rem 0;
+    position: relative;
+    padding-left: 1.5rem;
+    color: var(--text-light);
+    line-height: 1.6;
+}
+
+.impact-text li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+.impact-quote {
+    background: rgba(255, 107, 53, 0.05);
+    padding: 2rem;
+    border-radius: 15px;
+    border-left: 4px solid var(--primary-color);
+}
+
+.impact-quote blockquote {
+    font-style: italic;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: var(--text-dark);
+    margin: 0;
+}
+
+.impact-quote cite {
+    display: block;
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+.perspectives-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+}
+
+.perspective-item {
+    background: rgba(248, 249, 250, 0.8);
+    padding: 2rem;
+    border-radius: 15px;
+    transition: transform 0.3s ease;
+}
+
+.perspective-item:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-hover);
+}
+
+.perspective-item h4 {
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.perspective-item ul {
+    list-style: none;
+}
+
+.perspective-item li {
+    padding: 0.6rem 0;
+    position: relative;
+    padding-left: 1.5rem;
+    color: var(--text-light);
+    line-height: 1.6;
+}
+
+.perspective-item li::before {
+    content: '→';
+    position: absolute;
+    left: 0;
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+
+    .projet-intro,
+    .defis-container,
+    .impact-content,
+    .competences-grid,
+    .perspectives-content,
+    .analyse-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .objectifs-grid,
+    .tech-grid,
+    .resultats-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .projet-detail-content {
+        padding: 0 1rem;
+    }
+
+    .image-comparison {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .comparison-img-ancien,
+    .comparison-img-nouveau {
+        height: 250px;
+    }
+
+    .projet-img {
+        max-width: 100%;
+    }
+}

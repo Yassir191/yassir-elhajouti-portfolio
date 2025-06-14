@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voiture Télécommandée Autonome | Yassir El Hajouti</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="projet-detail.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <h2>Yassir El Hajouti</h2>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="index.html#accueil" class="nav-link">Accueil</a></li>
+                <li><a href="index.html#about" class="nav-link">À propos</a></li>
+                <li><a href="index.html#formation" class="nav-link">Formation</a></li>
+                <li><a href="index.html#competences" class="nav-link">Compétences</a></li>
+                <li><a href="index.html#projets" class="nav-link active">Projets</a></li>
+                <li><a href="index.html#activites" class="nav-link">Activités</a></li>
+                <li><a href="index.html#swot" class="nav-link">Analyse SWOT</a></li>
+                <li><a href="index.html#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Détail Projet Voiture Télécommandée -->
+    <section class="projet-detail">
+        <div class="container">
+            <div class="section-header">
+                <a href="index.html#projets" class="btn-retour">
+                    <i class="fas fa-arrow-left"></i> Retour aux projets
+                </a>
+                <h1 class="section-title">Voiture Télécommandée Autonome</h1>
+                <p class="section-subtitle">Projet multidisciplinaire de conception et réalisation d'un véhicule
+                    autonome</p>
+                <div class="projet-status-badge">
+                    <span class="status-badge termine">Terminé - 2ème année (2023)</span>
+                </div>
+            </div>
+
+            <div class="projet-detail-content">
+                <!-- Introduction du projet -->
+                <div class="projet-intro">
+                    <div class="intro-text">
+                        <h3>Contexte du projet</h3>
+                        <p>Dans le cadre du cours de Robotique Q2, nous avions pour mission de créer un véhicule depuis
+                            zéro capable d'être contrôlé manuellement à l'aide d'une manette, tout en disposant d'un
+                            mode totalement autonome pour naviguer sans collision avec les obstacles.</p>
+                        <p>Ce projet multidisciplinaire a combiné conception mécanique, électronique embarquée et
+                            programmation avancée pour créer un système robotique complet et fonctionnel.</p>
+                    </div>
+                </div>
+
+                <div class="intro-image">
+                    <div class="image-comparison">
+                        <div class="comparison-item">
+                            <h4>Modèle 3D du robot</h4>
+                            <img src="robot_3d_model.jpg" alt="Modèle 3D du robot" class="comparison-img-ancien">
+                        </div>
+                        <div class="comparison-item">
+                            <h4>Manette de contrôle</h4>
+                            <img src="manette_3d.jpg" alt="Manette de contrôle" class="comparison-img-nouveau">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Objectifs du projet -->
+                <div class="objectifs-section">
+                    <h3><i class="fas fa-bullseye"></i> Objectifs du projet</h3>
+                    <div class="objectifs-grid">
+                        <div class="objectif-item">
+                            <div class="objectif-icon">
+                                <i class="fas fa-gamepad"></i>
+                            </div>
+                            <h4>Contrôle manuel</h4>
+                            <p>Développement d'une manette sans fil avec joysticks pour un contrôle intuitif du véhicule
+                                et activation du bras robotisé.</p>
+                        </div>
+                        <div class="objectif-item">
+                            <div class="objectif-icon">
+                                <i class="fas fa-robot"></i>
+                            </div>
+                            <h4>Mode autonome</h4>
+                            <p>Implémentation d'un système de navigation autonome avec évitement d'obstacles grâce à des
+                                capteurs ultrasoniques.</p>
+                        </div>
+                        <div class="objectif-item">
+                            <div class="objectif-icon">
+                                <i class="fas fa-shield-alt"></i>
+                            </div>
+                            <h4>Sécurité RFID</h4>
+                            <p>Activation sécurisée du robot par lecteur RFID et signalisation visuelle des différents
+                                modes de fonctionnement.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Spécifications techniques -->
+                <div class="defis-section">
+                    <h3><i class="fas fa-cogs"></i> Spécifications techniques</h3>
+                    <div class="defis-container">
+                        <div class="defi-hardware">
+                            <h4><i class="fas fa-ruler"></i> Contraintes physiques</h4>
+                            <ul>
+                                <li><strong>Dimensions maximales :</strong> 25cm × 20cm × 20cm</li>
+                                <li><strong>Poids maximal :</strong> 5kg</li>
+                                <li><strong>Alimentation :</strong> Batterie rechargeable autonome</li>
+                                <li><strong>Mobilité :</strong> Capable de se déplacer sur différents types de surfaces
+                                </li>
+                                <li><strong>Structure :</strong> Châssis usiné par CNC avec composants imprimés 3D</li>
+                            </ul>
+                        </div>
+                        <div class="defi-software">
+                            <h4><i class="fas fa-microchip"></i> Fonctionnalités</h4>
+                            <ul>
+                                <li><strong>Deux modes de fonctionnement :</strong> Manuel et automatique</li>
+                                <li><strong>Communication Bluetooth :</strong> Liaison sans fil manette-véhicule</li>
+                                <li><strong>Signalisation LED :</strong> Indication visuelle du mode actif</li>
+                                <li><strong>Écran OLED :</strong> Affichage d'informations en temps réel</li>
+                                <li><strong>Sécurité RFID :</strong> Activation par tag autorisé uniquement</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Architecture électronique -->
+                <div class="analyse-section">
+                    <h3><i class="fas fa-project-diagram"></i> Architecture électronique</h3>
+                    <div class="analyse-content">
+                        <div class="analyse-text">
+                            <h4>Conception des PCB</h4>
+                            <p>Le projet intègre deux circuits imprimés personnalisés conçus avec Fusion360 :</p>
+                            <ul>
+                                <li><strong>PCB Manette :</strong> Intégration des joysticks, module Bluetooth HC-05,
+                                    lecteur RFID, écran OLED et LEDs de signalisation</li>
+                                <li><strong>PCB Robot :</strong> Gestion des moteurs via DRV8833, capteurs ultrasoniques
+                                    HC-SR04, servomoteurs et communication Bluetooth</li>
+                                <li><strong>Optimisation spatiale :</strong> Rebords arrondis pour s'adapter aux
+                                    boîtiers imprimés 3D</li>
+                                <li><strong>Gestion de l'alimentation :</strong> Distribution optimisée avec protection
+                                    des composants</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Images des PCB -->
+                    <div class="intro-image" style="margin-top: 2rem;">
+                        <div class="image-comparison">
+                            <div class="comparison-item">
+                                <h4>PCB Manette</h4>
+                                <img src="pcb_manette.jpg" alt="PCB de la manette" class="comparison-img-ancien">
+                            </div>
+                            <div class="comparison-item">
+                                <h4>PCB Robot</h4>
+                                <img src="pcb_robot.jpg" alt="PCB du robot" class="comparison-img-nouveau">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Conception mécanique -->
+                <div class="technologies-section">
+                    <h3><i class="fas fa-tools"></i> Conception mécanique</h3>
+                    <div class="tech-grid">
+                        <div class="tech-category">
+                            <h4><i class="fas fa-cube"></i> Modélisation 3D</h4>
+                            <div class="tech-tags">
+                                <span class="tech-tag">Fusion 360</span>
+                                <span class="tech-tag">Conception paramétrique</span>
+                                <span class="tech-tag">Assemblages complexes</span>
+                                <span class="tech-tag">GrabCAD</span>
+                            </div>
+                        </div>
+                        <div class="tech-category">
+                            <h4><i class="fas fa-gear"></i> Système directionnel</h4>
+                            <div class="tech-tags">
+                                <span class="tech-tag">Servomoteur de direction</span>
+                                <span class="tech-tag">Roulements à billes</span>
+                                <span class="tech-tag">Système de liaison</span>
+                                <span class="tech-tag">Rotation sans friction</span>
+                            </div>
+                        </div>
+                        <div class="tech-category">
+                            <h4><i class="fas fa-industry"></i> Fabrication</h4>
+                            <div class="tech-tags">
+                                <span class="tech-tag">Usinage CNC</span>
+                                <span class="tech-tag">Impression 3D</span>
+                                <span class="tech-tag">Assemblage mécanique</span>
+                                <span class="tech-tag">Intégration électronique</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Programmation -->
+                <div class="competences-developpees">
+                    <h3><i class="fas fa-code"></i> Développement logiciel</h3>
+                    <div class="competences-grid">
+                        <div class="competence-category">
+                            <h4>Architecture modulaire</h4>
+                            <ul>
+                                <li>Classe Bluetooth pour communication UART</li>
+                                <li>Code Master (manette) et Slave (robot)</li>
+                                <li>Gestion des modes manuel et automatique</li>
+                                <li>Interface utilisateur avec écran OLED</li>
+                                <li>Système de sécurité RFID intégré</li>
+                            </ul>
+                        </div>
+                        <div class="competence-category">
+                            <h4>Algorithmes avancés</h4>
+                            <ul>
+                                <li>Navigation autonome avec évitement d'obstacles</li>
+                                <li>Traitement des données de capteurs ultrasoniques</li>
+                                <li>Contrôle moteur avec driver DRV8833</li>
+                                <li>Gestion des servomoteurs pour direction et bras</li>
+                                <li>Communication Bluetooth bidirectionnelle</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Composants utilisés -->
+                <div class="resultats-section">
+                    <h3><i class="fas fa-microchip"></i> Composants intégrés</h3>
+                    <div class="resultats-grid">
+                        <div class="resultat-item">
+                            <div class="resultat-metric">
+                                <span class="metric-value">3</span>
+                                <span class="metric-label">Capteurs HC-SR04</span>
+                            </div>
+                            <p>Détection d'obstacles avec précision de 3mm sur 400cm de portée</p>
+                        </div>
+                        <div class="resultat-item">
+                            <div class="resultat-metric">
+                                <span class="metric-value">2</span>
+                                <span class="metric-label">Servomoteurs</span>
+                            </div>
+                            <p>Contrôle de direction et bras robotisé avec précision angulaire</p>
+                        </div>
+                        <div class="resultat-item">
+                            <div class="resultat-metric">
+                                <span class="metric-value">2</span>
+                                <span class="metric-label">Modules Bluetooth</span>
+                            </div>
+                            <p>Communication HC-05 avec portée de 10m et débit 38400 bps</p>
+                        </div>
+                        <div class="resultat-item">
+                            <div class="resultat-metric">
+                                <span class="metric-value">2</span>
+                                <span class="metric-label">Joysticks</span>
+                            </div>
+                            <p>Contrôle analogique 2 axes avec bouton intégré</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Résultats et performances -->
+                <div class="impact-section">
+                    <h3><i class="fas fa-trophy"></i> Résultats obtenus</h3>
+                    <div class="impact-content">
+                        <div class="impact-text">
+                            <p>Le projet a été mené à bien avec des résultats exceptionnels démontrant la maîtrise de
+                                l'ensemble des compétences techniques :</p>
+                            <ul>
+                                <li><strong>Mode manuel opérationnel :</strong> Contrôle précis et réactif via les
+                                    joysticks de la manette sans fil</li>
+                                <li><strong>Navigation autonome performante :</strong> Évitement d'obstacles efficace
+                                    avec adaptation en temps réel</li>
+                                <li><strong>Intégration réussie :</strong> Synergie parfaite entre mécanique,
+                                    électronique et programmation</li>
+                                <li><strong>Respect des contraintes :</strong> Dimensionnement et poids conformes aux
+                                    spécifications</li>
+                                <li><strong>Interface utilisateur intuitive :</strong> Signalisation LED et affichage
+                                    OLED informatifs</li>
+                            </ul>
+                        </div>
+                        <div class="impact-quote">
+                            <blockquote>
+                                "C'est sûrement notre projet le plus gros et le plus chronophage. Notre dévouement pour
+                                ce projet a été le même du début à la fin. Et c'est sûrement celui avec lequel nous nous
+                                sommes le plus amusé."
+                                <cite>— Extrait du rapport de projet</cite>
+                            </blockquote>
+                        </div>
+                    </div>
+
+                    <!-- Images des tests -->
+                    <div class="intro-image" style="margin-top: 2rem;">
+                        <div style="text-align: center;">
+                            <h4>Tests d'évitement d'obstacles</h4>
+                            <img src="test_obstacle.jpg" alt="Tests d'évitement d'obstacles" class="projet-img">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Difficultés et solutions -->
+                <div class="perspectives-section">
+                    <h3><i class="fas fa-exclamation-triangle"></i> Défis relevés</h3>
+                    <div class="perspectives-content">
+                        <div class="perspective-item">
+                            <h4><i class="fas fa-circuit-board"></i> Défis électroniques</h4>
+                            <ul>
+                                <li>Trois itérations de conception PCB nécessaires</li>
+                                <li>Correction des inversions de broches joysticks</li>
+                                <li>Optimisation de la disposition des composants</li>
+                                <li>Attribution correcte des broches microcontrôleur</li>
+                                <li>Gestion des délais de livraison des PCB</li>
+                            </ul>
+                        </div>
+                        <div class="perspective-item">
+                            <h4><i class="fas fa-wrench"></i> Solutions apportées</h4>
+                            <ul>
+                                <li>Méthodologie de test et validation progressive</li>
+                                <li>Réimpression 3D des pièces fragiles cassées</li>
+                                <li>Soudure minutieuse des composants</li>
+                                <li>Programmation modulaire et testée par étapes</li>
+                                <li>Documentation technique complète</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Compétences acquises -->
+                    <div class="defis-section" style="margin-top: 3rem;">
+                        <h3><i class="fas fa-graduation-cap"></i> Compétences développées</h3>
+                        <div class="defis-container">
+                            <div class="defi-hardware">
+                                <h4><i class="fas fa-brain"></i> Compétences techniques</h4>
+                                <ul>
+                                    <li><strong>Conception PCB :</strong> Maîtrise de Fusion360 pour circuits imprimés
+                                    </li>
+                                    <li><strong>Modélisation 3D :</strong> Conception mécanique complète et assemblages
+                                    </li>
+                                    <li><strong>Usinage :</strong> Utilisation de machines CNC et impression 3D</li>
+                                    <li><strong>Soudure électronique :</strong> Assemblage de composants sur PCB</li>
+                                    <li><strong>Programmation embarquée :</strong> Développement en MicroPython</li>
+                                </ul>
+                            </div>
+                            <div class="defi-software">
+                                <h4><i class="fas fa-users"></i> Compétences transversales</h4>
+                                <ul>
+                                    <li><strong>Gestion de projet :</strong> Planification et coordination d'équipe</li>
+                                    <li><strong>Résolution de problèmes :</strong> Diagnostic et correction d'erreurs
+                                    </li>
+                                    <li><strong>Documentation :</strong> Rédaction de rapports techniques détaillés</li>
+                                    <li><strong>Travail en équipe :</strong> Collaboration efficace et partage des
+                                        tâches</li>
+                                    <li><strong>Persévérance :</strong> Capacité à surmonter les obstacles techniques
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2025 Yassir El Hajouti - ePortfolio EPHEC. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to top button -->
+    <button class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
